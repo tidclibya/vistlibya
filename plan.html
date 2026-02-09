@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="خطط رحلتك إلى ليبيا - معلومات وإرشادات للزوار">
+    <meta name="keywords" content="تأشيرات ليبيا, سفر إلى ليبيا, نصائح سياحية, فنادق ليبيا">
+    <title>خطط رحلتك | Visit Libya</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-sun logo-icon"></i>
+                        <div class="logo-text">
+                            <strong>Visit Libya</strong>
+                            <span>المنصة الوطنية للسياحة</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <nav class="nav-menu">
+                    <button class="nav-toggle" aria-label="قائمة التنقل">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>الرئيسية</span>
+                        </a>
+                        <a href="destinations.html" class="nav-link">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>الوجهات</span>
+                        </a>
+                        <a href="heritage.html" class="nav-link">
+                            <i class="fas fa-landmark"></i>
+                            <span>التراث</span>
+                        </a>
+                        <a href="culture.html" class="nav-link">
+                            <i class="fas fa-utensils"></i>
+                            <span>الثقافة</span>
+                        </a>
+                        <a href="plan.html" class="nav-link active">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>خطط رحلتك</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">خطط رحلتك إلى ليبيا</h1>
+                <p class="hero-subtitle">كل ما تحتاجه لرحلة ممتعة وآمنة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trip Planning Steps -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خطوات تخطيط رحلتك</h2>
+                <p class="section-description">
+                    اتبع هذه الخطوات لتنظيم رحلة ناجحة إلى ليبيا
+                </p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>التأشيرات والمتطلبات</h3>
+                        <p>تعرف على متطلبات الدخول والتأشيرات المطلوبة حسب جنسيتك</p>
+                        <button class="btn btn-primary show-info" data-target="visa-info">
+                            <i class="fas fa-passport"></i>
+                            عرض التفاصيل
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>أفضل وقت للزيارة</h3>
+                        <p>اختر الوقت المناسب لزيارة ليبيا حسب الموسم والمنطقة</p>
+                        <button class="btn btn-primary show-info" data-target="season-info">
+                            <i class="fas fa-calendar-alt"></i>
+                            عرض التفاصيل
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>الإقامة والنقل</h3>
+                        <p>احجز فنادقك وخطط لرحلاتك الداخلية</p>
+                        <button class="btn btn-primary show-info" data-target="accommodation-info">
+                            <i class="fas fa-hotel"></i>
+                            عرض التفاصيل
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>الأنشطة والجولات</h3>
+                        <p>خطط لجولاتك السياحية والأنشطة التي تريد القيام بها</p>
+                        <button class="btn btn-primary show-info" data-target="activities-info">
+                            <i class="fas fa-hiking"></i>
+                            عرض التفاصيل
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Sections -->
+    <section class="info-sections section-padding bg-light">
+        <div class="container">
+            <!-- Visa Information -->
+            <div class="info-section active" id="visa-info">
+                <h3><i class="fas fa-passport"></i> التأشيرات والدخول</h3>
+                <p>تختلف متطلبات الدخول إلى ليبيا حسب جنسية الزائر:</p>
+                
+                <div class="visa-table">
+                    <div class="visa-row">
+                        <div class="visa-country">دول مجلس التعاون الخليجي</div>
+                        <div class="visa-requirements">لا تحتاج لتأشيرة مسبقة</div>
+                    </div>
+                    
+                    <div class="visa-row">
+                        <div class="visa-country">الدول العربية الأخرى</div>
+                        <div class="visa-requirements">تأشيرة عند الوصول</div>
+                    </div>
+                    
+                    <div class="visa-row">
+                        <div class="visa-country">الدول الأوروبية</div>
+                        <div class="visa-requirements">تأشيرة مسبقة مطلوبة</div>
+                    </div>
+                    
+                    <div class="visa-row">
+                        <div class="visa-country">الولايات المتحدة وكندا</div>
+                        <div class="visa-requirements">تأشيرة مسبقة مطلوبة</div>
+                    </div>
+                </div>
+                
+                <div class="visa-documents">
+                    <h4>الوثائق المطلوبة:</h4>
+                    <ul>
+                        <li>جواز سفر ساري المفعول لمدة 6 أشهر على الأقل</li>
+                        <li>استمارة طلب التأشيرة</li>
+                        <li>صور شخصية</li>
+                        <li>حجز فندقي</li>
+                        <li>تذكرة ذهاب وعودة</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Season Information -->
+            <div class="info-section" id="season-info">
+                <h3><i class="fas fa-calendar-alt"></i> أفضل وقت للزيارة</h3>
+                
+                <div class="season-grid">
+                    <div class="season-card">
+                        <div class="season-icon spring">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>الربيع (مارس - مايو)</h4>
+                        <p>أفضل وقت للزيارة، طقس معتدل وطبيعة خضراء</p>
+                    </div>
+                    
+                    <div class="season-card">
+                        <div class="season-icon autumn">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>الخريف (سبتمبر - نوفمبر)</h4>
+                        <p>طقس لطيف مناسب للسياحة الساحلية والثقافية</p>
+                    </div>
+                    
+                    <div class="season-card">
+                        <div class="season-icon winter">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <h4>الشتاء (ديسمبر - فبراير)</h4>
+                        <p>مناسب لزيارة المناطق الصحراوية والجنوبية</p>
+                    </div>
+                    
+                    <div class="season-card">
+                        <div class="season-icon summer">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h4>الصيف (يونيو - أغسطس)</h4>
+                        <p>حار على السواحل، مناسب للجبال والمناطق المرتفعة</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Accommodation Information -->
+            <div class="info-section" id="accommodation-info">
+                <h3><i class="fas fa-hotel"></i> الإقامة والنقل</h3>
+                
+                <div class="accommodation-types">
+                    <div class="accommodation-card">
+                        <h4>الفنادق</h4>
+                        <p>فنادق 5 نجوم في المدن الرئيسية، وفنادق 3-4 نجوم في المدن الأخرى</p>
+                        <div class="accommodation-price">
+                            <span>الأسعار: من $80 - $300 لليلة</span>
+                        </div>
+                    </div>
+                    
+                    <div class="accommodation-card">
+                        <h4>النزل التقليدية</h4>
+                        <p>إقامة تقليدية في المدن القديمة مثل غدامس وغازات</p>
+                        <div class="accommodation-price">
+                            <span>الأسعار: من $40 - $100 لليلة</span>
+                        </div>
+                    </div>
+                    
+                    <div class="accommodation-card">
+                        <h4>المخيمات الصحراوية</h4>
+                        <p>تجربة فريدة في الصحراء مع مرشدين محليين</p>
+                        <div class="accommodation-price">
+                            <span>الأسعار: من $100 - $200 لليلة (تشمل الوجبات)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="transportation">
+                    <h4>وسائل النقل:</h4>
+                    <div class="transport-options">
+                        <div class="transport-option">
+                            <i class="fas fa-plane"></i>
+                            <span>الطيران الداخلي</span>
+                        </div>
+                        <div class="transport-option">
+                            <i class="fas fa-bus"></i>
+                            <span>الحافلات السياحية</span>
+                        </div>
+                        <div class="transport-option">
+                            <i class="fas fa-car"></i>
+                            <span>تأجير السيارات</span>
+                        </div>
+                        <div class="transport-option">
+                            <i class="fas fa-taxi"></i>
+                            <span>سائق خاص</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Activities Information -->
+            <div class="info-section" id="activities-info">
+                <h3><i class="fas fa-hiking"></i> الأنشطة والجولات</h3>
+                
+                <div class="tours-grid">
+                    <div class="tour-package">
+                        <div class="tour-header">
+                            <h4>جولة التراث</h4>
+                            <span class="tour-duration">7 أيام</span>
+                        </div>
+                        <ul class="tour-includes">
+                            <li>طرابلس - لبدة - صبراتة</li>
+                            <li>زيارة المواقع الأثرية</li>
+                            <li>مرشد سياحي متخصص</li>
+                            <li>فنادق 4 نجوم</li>
+                        </ul>
+                        <div class="tour-price">
+                            <span>$1200 للشخص</span>
+                            <button class="btn btn-primary btn-small">احجز الآن</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-package">
+                        <div class="tour-header">
+                            <h4>مغامرة الصحراء</h4>
+                            <span class="tour-duration">5 أيام</span>
+                        </div>
+                        <ul class="tour-includes">
+                            <li>غدامس - مرزق - أوباري</li>
+                            <li>ركوب الجمال</li>
+                            <li>إقامة في المخيمات</li>
+                            <li>وجبات تقليدية</li>
+                        </ul>
+                        <div class="tour-price">
+                            <span>$800 للشخص</span>
+                            <button class="btn btn-primary btn-small">احجز الآن</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-package">
+                        <div class="tour-header">
+                            <h4>الساحل الليبي</h4>
+                            <span class="tour-duration">6 أيام</span>
+                        </div>
+                        <ul class="tour-includes">
+                            <li>طرابلس - زوارة - مصراتة</li>
+                            <li>أنشطة بحرية</li>
+                            <li>زيارة الأسواق</li>
+                            <li>تذوق المأكولات</li>
+                        </ul>
+                        <div class="tour-price">
+                            <span>$1000 للشخص</span>
+                            <button class="btn btn-primary btn-small">احجز الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Budget Calculator -->
+    <section class="calculator-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">حاسبة ميزانية الرحلة</h2>
+                <p class="section-description">
+                    قدّر تكاليف رحلتك إلى ليبيا
+                </p>
+            </div>
+            
+            <div class="calculator">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="days">عدد الأيام:</label>
+                        <input type="number" id="days" min="1" max="30" value="7">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="people">عدد الأشخاص:</label>
+                        <input type="number" id="people" min="1" max="10" value="2">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="accommodation">نوع الإقامة:</label>
+                        <select id="accommodation">
+                            <option value="budget">اقتصادي ($40/ليلة)</option>
+                            <option value="mid" selected>متوسط ($80/ليلة)</option>
+                            <option value="luxury">فاخر ($150/ليلة)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="tours">الجولات:</label>
+                        <select id="tours">
+                            <option value="none">بدون جولات</option>
+                            <option value="basic" selected>جولات أساسية ($200)</option>
+                            <option value="full">جولات شاملة ($500)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="calculator-results">
+                    <h3>التكلفة التقديرية:</h3>
+                    <div class="cost-breakdown">
+                        <div class="cost-item">
+                            <span>الإقامة:</span>
+                            <span id="accommodation-cost">$0</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>الجولات:</span>
+                            <span id="tours-cost">$0</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>الطعام:</span>
+                            <span id="food-cost">$0</span>
+                        </div>
+                        <div class="cost-item">
+                            <span>النقل:</span>
+                            <span id="transport-cost">$0</span>
+                        </div>
+                        <div class="cost-item total">
+                            <span>المجموع:</span>
+                            <span id="total-cost">$0</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" id="calculate-btn">
+                        <i class="fas fa-calculator"></i>
+                        احسب التكلفة
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Tips -->
+    <section class="safety-section bg-light section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">نصائح السلامة</h2>
+                <p class="section-description">
+                    نصائح مهمة لرحلة آمنة وممتعة
+                </p>
+            </div>
+            
+            <div class="safety-tips">
+                <div class="safety-tip">
+                    <i class="fas fa-passport"></i>
+                    <h4>الوثائق المهمة</h4>
+                    <p>احتفظ بصورة من جواز سفرك والتأشيرة في مكان منفصل عن الأصل</p>
+                </div>
+                
+                <div class="safety-tip">
+                    <i class="fas fa-sun"></i>
+                    <h4>الحماية من الشمس</h4>
+                    <p>استخدم واقي الشمس وارتدي ملابس قطنية في المناطق الصحراوية</p>
+                </div>
+                
+                <div class="safety-tip">
+                    <i class="fas fa-tint"></i>
+                    <h4>ترطيب الجسم</h4>
+                    <p>احرص على شرب الماء باستمرار خاصة في الصحراء</p>
+                </div>
+                
+                <div class="safety-tip">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>دليل محلي</h4>
+                    <p>استعن بمرشد محلي عند زيارة المناطق النائية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contacts -->
+    <section class="emergency-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">جهات الاتصال في حالات الطوارئ</h2>
+            </div>
+            
+            <div class="emergency-contacts">
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>الطوارئ العامة</h4>
+                    <p>1515</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-ambulance"></i>
+                    <h4>الإسعاف</h4>
+                    <p>193</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>الشرطة السياحية</h4>
+                    <p>+218-21-4444444</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-flag"></i>
+                    <h4>السفارة الأمريكية</h4>
+                    <p>+218-91-220-0125</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-sun"></i>
+                        <div>
+                            <h3>Visit Libya</h3>
+                            <p>المنصة الوطنية للسياحة</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        منصة وطنية رسمية تهدف إلى التعريف بالمقومات السياحية الليبية
+                        وإبراز العمق الحضاري والتنوع الطبيعي والثقافي لليبيا.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="destinations.html">الوجهات</a></li>
+                        <li><a href="heritage.html">التراث</a></li>
+                        <li><a href="culture.html">الثقافة</a></li>
+                        <li><a href="plan.html">خطط رحلتك</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>معلومات السفر</h4>
+                    <ul>
+                        <li><a href="#visa">التأشيرات</a></li>
+                        <li><a href="#accommodation">الإقامة</a></li>
+                        <li><a href="#transport">النقل</a></li>
+                        <li><a href="#safety">السلامة</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>تواصل معنا</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@visitlibya.ly</p>
+                        <p><i class="fas fa-phone"></i> +218-21-1234567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> طرابلس، ليبيا</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Visit Libya. جميع الحقوق محفوظة.</p>
+                <div class="footer-links">
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">شروط الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Trip planning steps functionality
+        document.querySelectorAll('.show-info').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const allSections = document.querySelectorAll('.info-section');
+                const targetSection = document.getElementById(targetId);
+                
+                // Hide all sections
+                allSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                
+                // Show target section
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Budget calculator functionality
+        const calculateBtn = document.getElementById('calculate-btn');
+        if (calculateBtn) {
+            calculateBtn.addEventListener('click', function() {
+                const days = parseInt(document.getElementById('days').value);
+                const people = parseInt(document.getElementById('people').value);
+                const accommodationType = document.getElementById('accommodation').value;
+                const toursType = document.getElementById('tours').value;
+                
+                // Prices per day
+                const accommodationPrices = {
+                    budget: 40,
+                    mid: 80,
+                    luxury: 150
+                };
+                
+                const toursPrices = {
+                    none: 0,
+                    basic: 200,
+                    full: 500
+                };
+                
+                const foodPerPerson = 30; // per day
+                const transportPerPerson = 20; // per day
+                
+                // Calculate costs
+                const accommodationCost = accommodationPrices[accommodationType] * days * people;
+                const toursCost = toursPrices[toursType] * people;
+                const foodCost = foodPerPerson * days * people;
+                const transportCost = transportPerPerson * days * people;
+                const totalCost = accommodationCost + toursCost + foodCost + transportCost;
+                
+                // Update display
+                document.getElementById('accommodation-cost').textContent = `$${accommodationCost}`;
+                document.getElementById('tours-cost').textContent = `$${toursCost}`;
+                document.getElementById('food-cost').textContent = `$${foodCost}`;
+                document.getElementById('transport-cost').textContent = `$${transportCost}`;
+                document.getElementById('total-cost').textContent = `$${totalCost}`;
+            });
+            
+            // Calculate initial cost
+            calculateBtn.click();
+        }
+    </script>
+</body>
+</html>
