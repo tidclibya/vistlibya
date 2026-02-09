@@ -1,0 +1,790 @@
+/* Additional styles for heritage.html, culture.html, and plan.html */
+
+/* Page Hero */
+.page-hero {
+    height: 400px;
+    background: linear-gradient(rgba(11, 79, 108, 0.9), rgba(11, 79, 108, 0.9)),
+                url('https://images.unsplash.com/photo-1513326738677-b964603b136d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.page-hero .hero-content {
+    text-align: center;
+    color: var(--white-color);
+}
+
+.page-hero .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-hero .hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* Heritage Page Styles */
+.heritage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.heritage-card {
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.heritage-card:hover {
+    transform: translateY(-5px);
+}
+
+.heritage-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.heritage-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heritage-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--accent-color);
+    color: var(--white-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.heritage-content {
+    padding: 1.5rem;
+}
+
+.heritage-meta {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.heritage-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    list-style: none;
+    padding: 0;
+}
+
+.heritage-features li {
+    background: var(--light-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 3rem auto 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent-color);
+    transform: translateX(50%);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.timeline-date {
+    flex: 0 0 120px;
+    background: var(--accent-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.timeline-content {
+    flex: 1;
+    padding: 1rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 0 2rem;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    width: 20px;
+    height: 20px;
+    background: var(--white-color);
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+    transform: translateX(50%);
+}
+
+/* Virtual Tour */
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tour-card {
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.tour-video {
+    height: 200px;
+    background: var(--dark-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-placeholder {
+    width: 60px;
+    height: 60px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.tour-info {
+    padding: 1.5rem;
+}
+
+.tour-duration {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Culture Page Styles */
+.cuisine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.dish-card {
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.dish-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.dish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.dish-card:hover .dish-image img {
+    transform: scale(1.1);
+}
+
+.dish-content {
+    padding: 1.5rem;
+}
+
+.dish-meta {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.dish-ingredients {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--light-color);
+}
+
+.dish-ingredients h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.dish-ingredients ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dish-ingredients li {
+    padding: 0.25rem 0;
+    color: #666;
+    position: relative;
+    padding-right: 15px;
+}
+
+.dish-ingredients li::before {
+    content: '•';
+    position: absolute;
+    right: 0;
+    color: var(--accent-color);
+}
+
+/* Traditions */
+.traditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tradition-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.tradition-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+/* Festivals */
+.festivals-timeline {
+    max-width: 600px;
+    margin: 2rem auto 0;
+}
+
+.festival-event {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.festival-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.festival-date .month {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.festival-date .day {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Recipes Accordion */
+.recipe-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+    border: 1px solid var(--light-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--white-color);
+    border: none;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.accordion-header:hover,
+.accordion-header.active {
+    background: var(--light-color);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 1.5rem;
+    background: var(--white-color);
+}
+
+.accordion-content h4 {
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+
+.accordion-content ul,
+.accordion-content ol {
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Plan Page Styles */
+.steps-container {
+    max-width: 800px;
+    margin: 3rem auto 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--accent-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Info Sections */
+.info-section {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.info-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.visa-table {
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin: 1rem 0;
+}
+
+.visa-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.visa-row:last-child {
+    border-bottom: none;
+}
+
+.visa-row > div {
+    padding: 1rem;
+}
+
+.visa-row:nth-child(even) {
+    background: var(--light-color);
+}
+
+.visa-documents {
+    margin-top: 2rem;
+}
+
+.visa-documents ul {
+    list-style: none;
+    padding: 0;
+}
+
+.visa-documents li {
+    padding: 0.5rem 0;
+    color: #666;
+    position: relative;
+    padding-right: 20px;
+}
+
+.visa-documents li::before {
+    content: '✓';
+    position: absolute;
+    right: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Seasons */
+.season-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.season-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.season-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.season-icon.spring { background: #4CAF50; }
+.season-icon.summer { background: #FF9800; }
+.season-icon.autumn { background: #795548; }
+.season-icon.winter { background: #2196F3; }
+
+/* Accommodation */
+.accommodation-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.accommodation-card {
+    padding: 1.5rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.accommodation-price {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--light-color);
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.transport-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.transport-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--white-color);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+/* Tours */
+.tours-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tour-package {
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.tour-header {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour-includes {
+    padding: 1.5rem;
+    list-style: none;
+    margin: 0;
+}
+
+.tour-includes li {
+    padding: 0.5rem 0;
+    color: #666;
+    position: relative;
+    padding-right: 20px;
+}
+
+.tour-includes li::before {
+    content: '✓';
+    position: absolute;
+    right: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.tour-price {
+    padding: 1.5rem;
+    border-top: 1px solid var(--light-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tour-price span {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Calculator */
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.calculator-inputs .input-group {
+    margin-bottom: 1.5rem;
+}
+
+.calculator-inputs label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.calculator-inputs input,
+.calculator-inputs select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--light-color);
+    border-radius: var(--border-radius);
+    font-family: 'Cairo', sans-serif;
+    font-size: 1rem;
+}
+
+.calculator-inputs input:focus,
+.calculator-inputs select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.cost-breakdown {
+    margin: 2rem 0;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.cost-item.total {
+    border-top: 2px solid var(--accent-color);
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+/* Safety Tips */
+.safety-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.safety-tip {
+    text-align: center;
+    padding: 2rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.safety-tip i {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+/* Emergency Contacts */
+.emergency-contacts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-hero .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .timeline::before {
+        right: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+    }
+    
+    .timeline-item:nth-child(odd) {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .timeline-content {
+        margin-right: 60px;
+        margin-left: 0;
+    }
+    
+    .timeline-item::after {
+        right: 30px;
+    }
+    
+    .step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .calculator {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .heritage-grid,
+    .cuisine-grid,
+    .tours-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .festival-event {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
